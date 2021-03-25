@@ -34,16 +34,34 @@ public class tree_height {
 		}
 
 		int computeHeight() {
-                        // Replace this code with a faster implementation
+			/*
+			Store count variable (max)
+			create new arr with length of the global array length (parent)
+			iterate over new arr (heights)
+			if current index is not 0, keep going
+			 */
 			int maxHeight = 0;
+			int[] heights = new int[parent.length];
 			for (int vertex = 0; vertex < n; vertex++) {
+				if (heights[vertex] != 0) continue;
+					
 				int height = 0;
-				for (int i = vertex; i != -1; i = parent[i])
+				for (int i = vertex; i != -1; i = parent[i]) {
+					if (heights[i] != 0) {
+						height += heights[i];
+						break;
+					}
 					height++;
+				}
 				maxHeight = Math.max(maxHeight, height);
+				for (int i = vertex; i != -1; i = parent[i]) {
+					if (heights[i] != 0)
+						break;
+					heights[i] = height--;
+				}
 			}
 			return maxHeight;
-		}
+		 }
 	}
 
 	static public void main(String[] args) throws IOException {
