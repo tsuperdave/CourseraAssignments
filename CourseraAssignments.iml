@@ -22,6 +22,7 @@
       <sourceFolder url="file://$MODULE_DIR$/week4_binary_search_trees/3_is_bst_advanced" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/week4_binary_search_trees/4_set_range_sum" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/week4_binary_search_trees/5_rope" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/design_patterns" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

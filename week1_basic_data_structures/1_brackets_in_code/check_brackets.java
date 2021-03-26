@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.Stack;
 
 class Bracket {
+
     Bracket(char type, int position) {
         this.type = type;
         this.position = position;
